@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả học tập - bt04.html</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 1px solid #888;
+            padding: 8px;
+            text-align: center;
+        }
+        /* Định dạng tiêu đề */
+        thead tr {
+            background-color: #d3d3d3; /* Màu nền xám */
+        }
+        /* Lặp lại tiêu đề khi in */
+        thead {
+            display: table-header-group;
+        }
+        /* Lặp lại hàng tổng số khi in */
+        tfoot {
+            display: table-footer-group;
+        }
+        /* Căn lề trái cho cột Họ tên */
+        .ten {
+            text-align: left;
+        }
+        /* Trạng thái kết quả */
+        .dat {
+            background-color: yellow;
+            color: black;
+        }
+        .khong-dat {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="5">KẾT QUẢ HỌC TẬP</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Họ tên</th>
+                <th colspan="3">Môn học</th>
+                <th rowspan="2">Kết quả</th>
+            </tr>
+            <tr>
+                <th>Toán</th>
+                <th>Văn</th>
+                <th>Ngoại ngữ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="ten">Trần Văn Thành</td>
+                <td>8</td>
+                <td>5</td>
+                <td>7</td>
+                <td class="dat">Đạt</td>
+            </tr>
+            <tr>
+                <td class="ten">Lê Thanh Sơn</td>
+                <td>4</td>
+                <td>8</td>
+                <td>6</td>
+                <td class="khong-dat">Không đạt</td>
+            </tr>
+            <tr>
+                <td class="ten">Nguyễn Thị Tuyết</td>
+                <td>8</td>
+                <td>9</td>
+                <td>5</td>
+                <td class="dat">Đạt</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: #f2f2f2;">
+                <td colspan="4" class="ten">Tổng số học sinh đạt</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
